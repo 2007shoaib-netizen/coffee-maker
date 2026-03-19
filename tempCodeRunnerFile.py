@@ -1,4 +1,4 @@
-from art import logo,logo1
+from art import logo
 def report_coffee(curr_water,curr_milk,curr_coffee,curr_money):
     print(f'Water: {curr_water}ml')
     print(f'Milk: {curr_milk}ml')
@@ -39,7 +39,6 @@ def process_coffee(ch_coff,curr_water,curr_milk,curr_coffee,curr_money):
             curr_money = curr_money + price_coffee
             print('Transaction Successful')
             print(f'Here is your {ch_coff}. Enjoy!')
-            print(logo1)
             return curr_water,curr_milk,curr_coffee,curr_money
         elif taken_money_count == price_coffee:
             curr_water = curr_water - needed_water
@@ -48,7 +47,6 @@ def process_coffee(ch_coff,curr_water,curr_milk,curr_coffee,curr_money):
             curr_money = curr_money + price_coffee
             print('Transaction Successful')
             print(f'Here is your {ch_coff}. Enjoy!')
-            print(logo1)
             return curr_water,curr_milk,curr_coffee,curr_money
         else:
             print(f"Sorry, that's not enough money. ${taken_money_count} refunded.")
@@ -85,9 +83,5 @@ while coffee_machine_status == 'on':
         coffee_machine_status = 'off'
     elif choice_coffee == 'latte' or choice_coffee == 'espresso' or choice_coffee == 'cappuccino':
         quant_water,quant_milk,quant_coffee,quant_money = process_coffee(choice_coffee,quant_water,quant_milk,quant_coffee,quant_money)
-        #print('\n'*20) 
     else:
         print('Invalid Selection!!!')
-    
-        
-    

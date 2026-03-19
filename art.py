@@ -6,3 +6,22 @@ C   C O   O F     F     E     E           M   M A   A K  K  E     R  R
  CCC   OOO  F     F     EEEEE EEEEE       M   M A   A K   K EEEEE R   R 
                                                                     
 """
+
+logo1 = R"""
+     {
+      {   }
+       }_{ __{
+    .-{   }   }-.
+   (   }     {   )
+   |`-.._____..-'|
+   |             ;--.
+   |            (__  \
+   |             | )  )
+   |             |/  /
+   |             /  /    
+   |            (  /
+   \             y'
+    `-.._____..-'
+
+"""
+
